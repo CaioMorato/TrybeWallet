@@ -60,8 +60,6 @@ class Login extends React.Component {
           {/* all credits from 'wallet' image to https://www.flaticon.com/authors/freepik */}
         </div>
         <form onSubmit={(e) => e.preventDefault()} className="login-form">
-          <div className="align-form">
-
           <div className="title">
             <h1>Trybewallet</h1>
             <img src={wallet} alt="" />
@@ -80,8 +78,6 @@ class Login extends React.Component {
             </button>
           </Link>
         </form>
-          </div>
-          
       </main>
     );
   }

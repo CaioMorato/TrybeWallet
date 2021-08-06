@@ -13,6 +13,10 @@
 .login-image {
   min-width: 50%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6456f7;
 }
 
 .login-image img {
@@ -20,9 +24,21 @@
 }
 
 .login-form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   min-width: 50%;
   height: 100vh;
 }
+
+.login-input {
+  border: 1px black solid;
+  border-radius: 6px;
+  font-size: 19px;
+  margin: 12px;
+}
+
 
 /*
 body {
@@ -43,29 +59,8 @@ body {
 }
 
 .login-form {
-  align-items: center;
-  background-color: #6564db;
-  border: 1px black solid;
-  border-radius: 17px;
-  box-shadow: 1px 2px 5px 1px white;
-  display: flex;
-  flex-flow: column;
-  margin: 10% auto auto;
-  padding: 12px;
-  width: 30%;
 }
 
-.illustration {
-  margin: 10px;
-  width: 220px;
-}
-
-.login-input {
-  border: 1px black solid;
-  border-radius: 6px;
-  font-size: 19px;
-  margin: 12px;
-}
 
 .button-container {
   margin: 10px;
