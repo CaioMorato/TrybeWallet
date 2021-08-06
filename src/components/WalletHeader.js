@@ -10,25 +10,19 @@ class WalletHeader extends React.Component {
     let pacoca = 0;
 
     if (totalExpenses.length > 0) {
-      pacoca = totalExpenses.reduce(
-        (acc, curr) => (
-          Number(curr.value * curr.exchangeRates[curr.currency].ask) + acc),
-        0,
-      );
+      pacoca = totalExpenses.reduce((acc, curr) => Number(curr.value * curr.exchangeRates[curr.currency].ask) + acc, 0);
     }
 
     return (
       <header className="wallet-header">
         <div className="logo-container">
-          <img src={ wallet } alt="" />
+          <img src={wallet} alt="" />
           <h1>Trybewallet</h1>
         </div>
-        <span data-testid="email-field">
-          {userMail}
-        </span>
+        <span>{userMail}</span>
         <div className="info-container">
-          <span data-testid="total-field">{pacoca.toFixed(2)}</span>
-          <span data-testid="header-currency-field">BRL</span>
+          <span>{pacoca.toFixed(2)}</span>
+          <span className="currency-field">BRL</span>
         </div>
       </header>
     );

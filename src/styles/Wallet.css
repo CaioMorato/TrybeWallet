@@ -1,13 +1,19 @@
 .wallet-header {
-  align-items: center;
-  background-color: #dedef7;
   display: flex;
-  justify-content: space-around;
-  margin: auto auto 15px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6456f7;
 }
 
 .logo-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 40px;
+  margin: 0 15px;
 }
 
 .info-container {
@@ -15,3 +21,7 @@
   justify-content: space-around;
 }
 
+.currency-field {
+  margin-right: 15px;
+  margin-left: 7px;
+}
