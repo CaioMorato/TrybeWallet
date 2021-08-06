@@ -6,7 +6,7 @@ import SelectPayment from './SelectPayment';
 import ExpenseTag from './ExpenseTag';
 import SelectCurrency from './SelectCurrency';
 import '../styles/AddExpenses.css';
-import * as actions from '../actions';
+import * as actions from '../redux/actions';
 
 class AddExpenses extends React.Component {
   constructor() {
