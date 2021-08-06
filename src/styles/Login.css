@@ -4,8 +4,28 @@
   padding: 0;
 }
 
+.login-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login-image {
+  min-width: 50%;
+  height: 100vh;
+}
+
+.login-image img {
+  max-height: 50vh;
+}
+
+.login-form {
+  min-width: 50%;
+  height: 100vh;
+}
+
+/*
 body {
-  background-color: #6564db;
 }
 
 .title {
@@ -81,4 +101,4 @@ body {
 .disabled-button:hover {
   cursor: not-allowed;
   transform: scale(1.03);
-}
+} */

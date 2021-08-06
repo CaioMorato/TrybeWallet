@@ -25,9 +25,14 @@ class Login extends React.Component {
 
   handleChange({ target }) {
     const { name, value } = target;
-    this.setState({
-      [name]: value,
-    }, () => { this.buttonHandler(); });
+    this.setState(
+      {
+        [name]: value,
+      },
+      () => {
+        this.buttonHandler();
+      }
+    );
   }
 
   buttonHandler() {
@@ -48,49 +53,36 @@ class Login extends React.Component {
   render() {
     const { email, password, buttonDisable } = this.state;
     return (
-      <form onSubmit={ (e) => e.preventDefault() } className="login-form">
-        <div className="title">
-          <h1>Trybewallet</h1>
-          <img src={ wallet } alt="" />
+      <main className="login-page">
+        <div className="login-image">
+          <img src={svg} alt="investment illustration" className="illustration" />
+
           {/* all credits from 'wallet' image to https://www.flaticon.com/authors/freepik */}
         </div>
-        <img src={ svg } alt="investment illustration" className="illustration" />
-        <label htmlFor="input-email">
-          E-mail:
-          <input
-            name="email"
-            onChange={ this.handleChange }
-            data-testid="email-input"
-            type="email"
-            id="input-email"
-            value={ email }
-            className="login-input"
-          />
-        </label>
-        <label htmlFor="input-password">
-          Senha:
-          <input
-            data-testid="password-input"
-            name="password"
-            onChange={ this.handleChange }
-            type="password"
-            id="input-password"
-            value={ password }
-            className="login-input"
-          />
-        </label>
-        <Link to="/carteira" className="button-container">
-          <button
-            type="submit"
-            disabled={ buttonDisable }
-            onClick={ this.emailSave }
-            className={ buttonDisable ? 'disabled-button' : 'enabled-button' }
-          >
-            Entrar
-          </button>
-        </Link>
-      </form>
+        <form onSubmit={(e) => e.preventDefault()} className="login-form">
+          <div className="align-form">
 
+          <div className="title">
+            <h1>Trybewallet</h1>
+            <img src={wallet} alt="" />
+          </div>
+          <label htmlFor="input-email">
+            E-mail:
+            <input name="email" onChange={this.handleChange} type="email" id="input-email" value={email} className="login-input" />
+          </label>
+          <label htmlFor="input-password">
+            Senha:
+            <input name="password" onChange={this.handleChange} type="password" id="input-password" value={password} className="login-input" />
+          </label>
+          <Link to="/carteira" className="button-container">
+            <button type="submit" disabled={buttonDisable} onClick={this.emailSave} className={buttonDisable ? 'disabled-button' : 'enabled-button'}>
+              Entrar
+            </button>
+          </Link>
+        </form>
+          </div>
+          
+      </main>
     );
   }
 }
