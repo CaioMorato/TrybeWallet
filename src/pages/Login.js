@@ -61,14 +61,14 @@ class Login extends React.Component {
         </div>
         <form onSubmit={(e) => e.preventDefault()} className="login-form">
           <div className="title">
-            <h1>Trybewallet</h1>
             <img src={wallet} alt="" />
+            <h1>Trybewallet</h1>
           </div>
-          <label htmlFor="input-email">
+          <label className="login-label" htmlFor="input-email">
             E-mail:
             <input name="email" onChange={this.handleChange} type="email" id="input-email" value={email} className="login-input" />
           </label>
-          <label htmlFor="input-password">
+          <label className="login-label" htmlFor="input-password">
             Senha:
             <input name="password" onChange={this.handleChange} type="password" id="input-password" value={password} className="login-input" />
           </label>
