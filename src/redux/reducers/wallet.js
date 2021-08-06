@@ -1,4 +1,4 @@
-import { REQUEST_EXCHANGE_RATE_SUCCESS } from '../redux/actions';
+import { REQUEST_EXCHANGE_RATE_SUCCESS } from '../actions';
 
 const INITIAL_WALLET_STATE = {
   currencies: [],
