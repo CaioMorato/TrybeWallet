@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #6564db;
+}
+
+.title {
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+.title img {
+  margin: 10px;
+  width: 32px;
+}
+
+.title h1 {
+  margin: 10px;
+}
+
+.login-form {
+  align-items: center;
+  background-color: #6564db;
+  border: 1px black solid;
+  border-radius: 17px;
+  box-shadow: 1px 2px 5px 1px white;
+  display: flex;
+  flex-flow: column;
+  margin: 10% auto auto;
+  padding: 12px;
+  width: 30%;
+}
+
+.illustration {
+  margin: 10px;
+  width: 220px;
+}
+
+.login-input {
+  border: 1px black solid;
+  border-radius: 6px;
+  font-size: 19px;
+  margin: 12px;
+}
+
+.button-container {
+  margin: 10px;
+}
+  
+.enabled-button {
+  background-color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: larger;
+  height: 35px;
+  width: 100px;
+}
+
+.enabled-button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.enabled-button:active {
+  transform: scale(0.99);
+}
+
+.disabled-button {
+  background-color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: larger;
+  height: 35px;
+  width: 100px;
+}
+
+.disabled-button:hover {
+  cursor: not-allowed;
+  transform: scale(1.03);
+}

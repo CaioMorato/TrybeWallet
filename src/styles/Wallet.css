@@ -1,0 +1,17 @@
+.wallet-header {
+  align-items: center;
+  background-color: #dedef7;
+  display: flex;
+  justify-content: space-around;
+  margin: auto auto 15px;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+}
+
