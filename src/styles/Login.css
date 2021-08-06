@@ -40,22 +40,22 @@
 }
 
 .title h1 {
-  font-size: 50px;
+  font-size: 38px;
 }
 
 .title img {
-  width: 64px;
+  width: 40px;
 }
 
 .login-input {
   border: 3px black solid;
   border-radius: 6px;
-  font-size: 30px;
+  font-size: 18px;
   margin: 20px;
 }
 
 .login-label {
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .button-container {
@@ -63,33 +63,30 @@
 }
 
 .enabled-button {
-  /* background-color: white; */
-  border: none;
-  border-radius: 7px;
-  font-size: larger;
-  height: 45px;
-  width: 120px;
+  background-color: #16ad88;
+  border-radius: 4px;
+  font-size: 20px;
+  height: 38px;
+  width: 90px;
 }
 
 .enabled-button:hover {
   cursor: pointer;
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .enabled-button:active {
-  transform: scale(0.99);
+  transform: scale(0.97);
 }
 
 .disabled-button {
-  background-color: white;
-  border: none;
-  border-radius: 7px;
-  font-size: larger;
-  height: 35px;
-  width: 100px;
+  background-color: #86dac5;
+  border-radius: 4px;
+  font-size: 20px;
+  height: 38px;
+  width: 90px;
 }
 
 .disabled-button:hover {
   cursor: not-allowed;
-  transform: scale(1.03);
 }
