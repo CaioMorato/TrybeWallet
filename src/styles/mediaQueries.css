@@ -1,0 +1,40 @@
+@media (min-width: 600px) and (max-width: 1440px) {
+  .wallet-page-content {
+    height: 84vh;
+  }
+
+  .form-container {
+    margin: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 25px;
+    margin: 10px auto;
+  }
+
+  .add-expenses-form {
+    font-size: 19px;
+    margin: 25px auto;
+  }
+
+  .second-row {
+    width: 70%;
+  }
+
+  .second-row input {
+    text-align: center;
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .add-expenses-button {
+    font-size: 18px;
+    margin: 8px 0;
+    padding: 8px;
+  }
+
+  .report-container {
+    margin: 20px 25px;
+    height: 80vh;
+  }
+}

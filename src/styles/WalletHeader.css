@@ -6,6 +6,12 @@
   height: 65px;
 }
 
+@media (max-width: 1440px) {
+  .wallet-header {
+    height: 50px;
+  }
+}
+
 .logo-container {
   display: flex;
   justify-content: center;
@@ -25,6 +31,7 @@
   display: flex;
   justify-content: space-around;
   font-size: 22px;
+  width: 130px;
 }
 
 .currency-field {
