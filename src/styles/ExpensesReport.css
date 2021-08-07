@@ -1,0 +1,16 @@
+.report-container {
+  background-color: white;
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-radius: 6px;
+  margin: 15px;
+
+}
+
+th {
+  border: 1px black solid;
+}
+
+td {
+  text-align: center;
+}
