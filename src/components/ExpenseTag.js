@@ -5,8 +5,6 @@ export default class ExpenseTag extends React.Component {
   render() {
     const { tag, handleChange } = this.props;
     return (
-      <label htmlFor="tag">
-        Tag:
         <select name="tag" id="tag" value={ tag } onChange={ handleChange }>
           <option>Alimentação</option>
           <option>Lazer</option>
@@ -14,7 +12,6 @@ export default class ExpenseTag extends React.Component {
           <option>Transporte</option>
           <option>Saúde</option>
         </select>
-      </label>
 
     );
   }

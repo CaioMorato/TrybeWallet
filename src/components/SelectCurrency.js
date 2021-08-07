@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/AddExpenses.css';
 
 export default class SelectCurrency extends React.Component {
   constructor() {
@@ -20,8 +21,7 @@ export default class SelectCurrency extends React.Component {
     const fetchAPI = await fetch('https://economia.awesomeapi.com.br/json/all');
     const apiJSON = await fetchAPI.json();
     const currencyList = Object.values(apiJSON);
-    const newCurrencyList = currencyList
-      .filter((currency) => currency.code !== 'USDT' && currency.codein !== 'BRLT');
+    const newCurrencyList = currencyList.filter((currency) => currency.code !== 'USDT' && currency.codein !== 'BRLT');
     this.setState({
       newCurrencyList,
     });
@@ -32,25 +32,16 @@ export default class SelectCurrency extends React.Component {
     const { currencyValue, handleChange } = this.props;
     return (
       <label htmlFor="currency">
-        Moeda:
-        <select
-          name="currency"
-          id="currency"
-          onChange={ handleChange }
-          value={ currencyValue }
-        >
-          {newCurrencyList.filter((currency) => currency.code !== 'USDT')
+        <select name="currency" id="currency" onChange={handleChange} value={currencyValue}>
+          {newCurrencyList
+            .filter((currency) => currency.code !== 'USDT')
             .map((currency) => (
-              <option
-                key={ currency.code }
-                value={ currency.code }
-              >
+              <option key={currency.code} value={currency.code}>
                 {currency.code}
               </option>
             ))}
         </select>
       </label>
-
     );
   }
 }
