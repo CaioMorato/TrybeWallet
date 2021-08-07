@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+
 .report-container {
   border: 1px solid black;
   border-collapse: collapse;
@@ -14,11 +16,26 @@ table {
 }
 
 th {
-  border: 2px black solid;
+  border: 1px black solid;
+  background-color: #16ad88;
+  font-family: 'Recursive', sans-serif;
 }
 
 td {
   text-align: center;
   border-right: 1px black solid;
   border-bottom: 1px black solid;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6456f7; 
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b3ee2; 
 }

@@ -15,8 +15,7 @@ class ExpensesReport extends React.Component {
             <th>Valor</th>
             <th>Taxa do Câmbio</th>
             <th>Valor Convertido</th>
-            <th>Moeda de conversão</th>
-          </tr>
+            </tr>
           {expenses.map((expense) => (
             <tr>
               <td>{expense.description}</td>
@@ -25,7 +24,6 @@ class ExpensesReport extends React.Component {
               <td>{expense.value}</td>
               <td>{expense.exchangeRates[expense.currency].ask}</td>
               <td>{expense.exchangeRates[expense.currency].ask * expense.value}</td>
-              <td>{expense.currency}</td>
             </tr>
           ))}
         </table>
