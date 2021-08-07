@@ -5,6 +5,11 @@ import '../styles/ExpensesReport.css';
 class ExpensesReport extends React.Component {
   render() {
     const { expenses } = this.props;
+    const BRLCurrency = {
+      style: 'currency',
+      currency: 'BRL',
+    };
+
     return (
       <div className="report-container">
         <table>
@@ -12,18 +17,16 @@ class ExpensesReport extends React.Component {
             <th>Descrição</th>
             <th>Categoria</th>
             <th>Método de Pagamento</th>
-            <th>Valor</th>
             <th>Taxa do Câmbio</th>
-            <th>Valor Convertido</th>
-            </tr>
+            <th>Valor</th>
+          </tr>
           {expenses.map((expense) => (
             <tr>
               <td>{expense.description}</td>
               <td>{expense.tag}</td>
               <td>{expense.method}</td>
-              <td>{expense.value}</td>
               <td>{expense.exchangeRates[expense.currency].ask}</td>
-              <td>{expense.exchangeRates[expense.currency].ask * expense.value}</td>
+              <td className="value-column">{(expense.exchangeRates[expense.currency].ask * expense.value).toLocaleString('pt-BR', BRLCurrency)}</td>
             </tr>
           ))}
         </table>

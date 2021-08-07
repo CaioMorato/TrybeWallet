@@ -3,11 +3,10 @@
 .report-container {
   border: 1px solid black;
   border-collapse: collapse;
-  border-radius: 6px;
   width: 65%;
   font-size: 17px;
-  margin: auto;
-  height: 80%;
+  margin: 20px 25px;
+  overflow: scroll;
 }
 
 table {
@@ -19,23 +18,30 @@ th {
   border: 1px black solid;
   background-color: #16ad88;
   font-family: 'Recursive', sans-serif;
+  width: 10%;
 }
 
 td {
   text-align: center;
+  border-left: 1px black solid;
   border-right: 1px black solid;
   border-bottom: 1px black solid;
 }
 
+.value-column {
+  background-color: #99d6c7;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
+  height: 9px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6456f7; 
+  background: #6456f7;
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4b3ee2; 
+  background: #4b3ee2;
 }

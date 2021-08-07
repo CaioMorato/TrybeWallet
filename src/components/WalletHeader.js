@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import wallet from '../images/wallet.png';
-import '../styles/WalletHeader.css'
+import '../styles/WalletHeader.css';
 
 class WalletHeader extends React.Component {
   render() {
@@ -14,6 +14,11 @@ class WalletHeader extends React.Component {
       pacoca = totalExpenses.reduce((acc, curr) => Number(curr.value * curr.exchangeRates[curr.currency].ask) + acc, 0);
     }
 
+    const BRLCurrency = {
+      style: 'currency',
+      currency: 'BRL',
+    };
+
     return (
       <header className="wallet-header">
         <div className="logo-container">
@@ -22,8 +27,7 @@ class WalletHeader extends React.Component {
         </div>
         <span className="user-email">{userMail}</span>
         <div className="info-container">
-          <span>{pacoca.toFixed(2)}</span>
-          <span className="currency-field">BRL</span>
+          <span>{pacoca.toLocaleString('pt-BR', BRLCurrency)}</span>
         </div>
       </header>
     );
