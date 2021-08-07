@@ -72,7 +72,7 @@ class Login extends React.Component {
             Senha:
             <input name="password" onChange={this.handleChange} type="password" id="input-password" value={password} className="login-input" />
           </label>
-          <Link to="/carteira" className="button-container">
+          <Link to={process.env.PUBLIC_URL + '/carteira'} className="button-container">
             <button type="submit" disabled={buttonDisable} onClick={this.emailSave} className={buttonDisable ? 'disabled-button' : 'enabled-button'}>
               Entrar
             </button>
