@@ -79,10 +79,10 @@ class AddExpenses extends React.Component {
           <div className="layer third-row">
             <SelectPayment method={method} handleChange={this.handleChange} />
           </div>
-          <div className="layer fourth-row">  
+          <div className="layer fourth-row">
             <ExpenseTag tag={tag} handleChange={this.handleChange} />
           </div>
-          <button type="submit" onClick={this.sendExpense}>
+          <button className="add-expenses-button" type="submit" onClick={this.sendExpense}>
             Adicionar Despesa
           </button>
         </form>

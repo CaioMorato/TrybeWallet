@@ -19,7 +19,7 @@ class WalletHeader extends React.Component {
           <img src={wallet} alt="" />
           <h1>Trybewallet</h1>
         </div>
-        <span>{userMail}</span>
+        <span className="user-email">{userMail}</span>
         <div className="info-container">
           <span>{pacoca.toFixed(2)}</span>
           <span className="currency-field">BRL</span>

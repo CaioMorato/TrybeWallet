@@ -6,7 +6,7 @@
   border: 1px solid black;
   border-radius: 6px;
   margin: 15px;
-  height: 87vh;
+  height: 83vh;
   width: 40%;
 }
 
@@ -19,8 +19,6 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  /* width: 85%; */
-  border: 1px red solid;
   font-size: 25px;
   margin: 25px auto;
 }
@@ -41,6 +39,7 @@
 
 .add-expenses-form select {
   background: transparent;
+  border: 2px black solid;
   border-radius: 6px;
   font-size: 21px;
   outline: none;
@@ -57,30 +56,14 @@
   width: 30%;
 }
 
-.third-row label {
-  margin: 0;
-}
-/*
-
-
-
-.third-row select {
-  margin: auto 10px;
-  width: 40%;
-}
-
-.fourth-row {
-  width: 40%;
-}
-
-.fourth-row select {
-  margin: 0 10px;
-  width: 70%;
-}
-
-.add-expenses-form button {
-  background-color: rgb(199, 25, 25);
+.add-expenses-button {
+  background-color: #b1192d;
   color: white;
   font-size: larger;
   margin: 20px 0;
-} */
+  padding: 15px;
+}
+
+.add-expenses-button:hover {
+  cursor: pointer;
+}
