@@ -9,7 +9,7 @@ class Wallet extends React.Component {
     return (
       <>
         <WalletHeader />
-        <main className="wallet-page">
+        <main className="wallet-page-content">
           <AddExpenses />
           <ExpensesReport />
         </main>
