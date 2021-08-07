@@ -2,9 +2,16 @@
   border: 1px solid black;
   border-collapse: collapse;
   border-radius: 6px;
-  margin: 20px 25px;
-  width: 64%;
+  width: 65%;
   font-size: 17px;
+  margin: auto;
+  height: 80%;
+}
+
+@media (max-width: 1440px) {
+  .report-container {
+    margin: 20px 25px;
+  }
 }
 
 table {
