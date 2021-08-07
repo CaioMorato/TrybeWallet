@@ -1,6 +1,7 @@
 import React from 'react';
 import WalletHeader from '../components/WalletHeader';
 import AddExpenses from '../components/AddExpenses';
+import ExpensesReport from '../components/ExpensesReport';
 import '../styles/Wallet.css';
 
 class Wallet extends React.Component {
@@ -8,8 +9,9 @@ class Wallet extends React.Component {
     return (
       <>
         <WalletHeader />
-        <main>
+        <main className="wallet-page">
           <AddExpenses />
+          <ExpensesReport />
         </main>
       </>
     );

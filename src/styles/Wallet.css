@@ -1,33 +1,3 @@
-.wallet-header {
+.wallet-page {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #6456f7;
-  height: 65px;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo-container img {
-  width: 40px;
-  margin: 0 15px;
-}
-
-.user-email {
-  font-size: 22px;
-}
-
-.info-container {
-  display: flex;
-  justify-content: space-around;
-  font-size: 22px;
-}
-
-.currency-field {
-  margin-right: 15px;
-  margin-left: 7px;
 }
