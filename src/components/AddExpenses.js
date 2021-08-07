@@ -20,7 +20,7 @@ class AddExpenses extends React.Component {
       id: 0,
       value: '',
       description: '',
-      currency: 'USD',
+      currency: 'BRL',
       method: 'Cartão de Crédito',
       tag: 'Alimentação',
       exchangeRates: {},
@@ -30,6 +30,15 @@ class AddExpenses extends React.Component {
   async fetchAPI() {
     const requestExchangeRates = await fetch('https://economia.awesomeapi.com.br/json/all');
     const exchangeRatesJSON = await requestExchangeRates.json();
+    const BRL = {
+      ask: '1.00',
+      code: 'BRL',
+      codein: 'BRL',
+      name: 'Real Brasileiro/Real Brasileiro',
+      timestamp: 'always',
+    };
+    exchangeRatesJSON.BRL = BRL;
+
     this.setState((prevState) => ({
       ...prevState,
       exchangeRates: exchangeRatesJSON,
@@ -44,7 +53,7 @@ class AddExpenses extends React.Component {
       id: prevState.id + 1,
       value: '',
       description: '',
-      currency: 'USD',
+      currency: 'BRL',
       method: 'Cartão de Crédito',
       tag: 'Alimentação',
       exchangeRates: {},

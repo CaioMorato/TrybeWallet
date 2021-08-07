@@ -20,8 +20,25 @@ export default class SelectCurrency extends React.Component {
   async fetchCurrencyList() {
     const fetchAPI = await fetch('https://economia.awesomeapi.com.br/json/all');
     const apiJSON = await fetchAPI.json();
+    const BRL = {
+      ask: '1.00',
+      code: 'BRL',
+      codein: 'BRL',
+      name: 'Real Brasileiro/Real Brasileiro',
+      timestamp: 'always',
+    };
+    apiJSON.BRL = BRL;
     const currencyList = Object.values(apiJSON);
-    const newCurrencyList = currencyList.filter((currency) => currency.code !== 'USDT' && currency.codein !== 'BRLT');
+    const newCurrencyList = currencyList
+      .sort((a, b) => {
+        if (a.code > b.code) {
+          return 1;
+        } else if (a.code < b.code) {
+          return -1;
+        }
+        return 0;
+      })
+      .filter((currency) => currency.code !== 'USDT' && currency.codein !== 'BRLT');
     this.setState({
       newCurrencyList,
     });

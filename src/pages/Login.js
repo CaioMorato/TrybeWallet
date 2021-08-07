@@ -66,11 +66,11 @@ class Login extends React.Component {
           </div>
           <label className="login-label" htmlFor="input-email">
             E-mail:
-            <input name="email" onChange={this.handleChange} type="email" id="input-email" value={email} className="login-input" />
+            <input name="email" onChange={this.handleChange} type="email" id="input-email" value={email} className="login-input" placeholder="email@email.com" />
           </label>
           <label className="login-label" htmlFor="input-password">
             Senha:
-            <input name="password" onChange={this.handleChange} type="password" id="input-password" value={password} className="login-input" />
+            <input name="password" onChange={this.handleChange} type="password" id="input-password" value={password} className="login-input" placeholder="Senha com 6 dígitos" />
           </label>
           <Link to={process.env.PUBLIC_URL + '/carteira'} className="button-container">
             <button type="submit" disabled={buttonDisable} onClick={this.emailSave} className={buttonDisable ? 'disabled-button' : 'enabled-button'}>
