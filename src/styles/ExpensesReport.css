@@ -1,14 +1,19 @@
 .report-container {
-  background-color: white;
   border: 1px solid black;
   border-collapse: collapse;
   border-radius: 6px;
   margin: 15px;
+  width: 64%;
+  font-size: 17px;
+}
 
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
 th {
-  border: 1px black solid;
+  border: 2px black solid;
 }
 
 td {

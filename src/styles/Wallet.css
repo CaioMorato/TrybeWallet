@@ -1,3 +1,5 @@
 .wallet-page {
   display: flex;
+  height: 83vh;
+  width: 100%;
 }

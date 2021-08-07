@@ -21,8 +21,8 @@ class AddExpenses extends React.Component {
       value: '',
       description: '',
       currency: 'USD',
-      method: '',
-      tag: '',
+      method: 'Cartão de Crédito',
+      tag: 'Alimentação',
       exchangeRates: {},
     };
   }
@@ -45,8 +45,8 @@ class AddExpenses extends React.Component {
       value: '',
       description: '',
       currency: 'USD',
-      method: '',
-      tag: '',
+      method: 'Cartão de Crédito',
+      tag: 'Alimentação',
       exchangeRates: {},
     }));
   }
